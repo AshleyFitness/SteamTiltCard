@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d345f 0%, #000000 74%);
+}
+#commerce {
+    height: 100vh;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    justify-content: center;
+    grid-gap: 30px;
+
+}
+.card {
+    width: 300px;
+    height: 300px;
+    font-size: 1.75rem;
+    color: #fff;
+    background-image: url('./background.jpg');
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    border-radius: 1rem;
+    filter: grayscale(1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
+}
+.card h1 {
+    align-self: top;
+    width: 100%;
+    font-family: Arial;
+    background-color: #3f0d12;
+    background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+    border-radius: 1rem;
+
+}
+.card h1, .card h2 {
+    text-align: center;
+}
+
+.centered_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+}
+.centered_image img {
+
+    
+width: 240px;
+height:  200px;
+}
+#title {
+    position: relative;
+    text-align: center;
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 700;
+
+    font-family: 'Barlow Semi Condensed',sans-serif;
+    animation-fill-mode: both;
+}
+.titleSpan {
+    opacity: 0;
+    white-space: pre;
+    transition: all 1s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+.fade {
+    transform: translateY(0px);
+    opacity: 1;
+}
